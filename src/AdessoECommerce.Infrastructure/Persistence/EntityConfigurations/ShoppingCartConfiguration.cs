@@ -16,7 +16,5 @@ public class ShoppingCartConfiguration : IEntityTypeConfiguration<ShoppingCart>
         
         builder.Property(i => i.CreatedDate).HasColumnName("created_date");
         builder.Property(i => i.UpdatedDate).HasColumnName("updated_date");
-        
-        builder.HasOne(i => i.Customer).WithMany().HasForeignKey(i => i.CustomerId);
     }
 }

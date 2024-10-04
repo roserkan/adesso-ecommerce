@@ -8,7 +8,7 @@ public class ProductImageConfiguration : IEntityTypeConfiguration<ProductImage>
 {
     public void Configure(EntityTypeBuilder<ProductImage> builder)
     {
-        builder.ToTable("product_reviews").HasKey(i => i.Id);
+        builder.ToTable("product_images").HasKey(i => i.Id);
 
         builder.Property(i => i.Id).HasColumnName("id").IsRequired();
 
@@ -17,8 +17,5 @@ public class ProductImageConfiguration : IEntityTypeConfiguration<ProductImage>
         
         builder.Property(i => i.CreatedDate).HasColumnName("created_date");
         builder.Property(i => i.UpdatedDate).HasColumnName("updated_date");
-        
-        builder.HasOne(i => i.Product).WithMany(i => i.ProductImages).HasForeignKey(i => i.ProductId);
-        
     }
 }

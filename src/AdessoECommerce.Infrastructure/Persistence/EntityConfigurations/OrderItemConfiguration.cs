@@ -19,8 +19,5 @@ public class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
 
         builder.Property(i => i.CreatedDate).HasColumnName("created_date");
         builder.Property(i => i.UpdatedDate).HasColumnName("updated_date");
-        
-        builder.HasOne(i => i.Product).WithMany().HasForeignKey(i => i.ProductId);
-        builder.HasOne(i => i.Order).WithMany(i => i.OrderItems).HasForeignKey(i => i.OrderId);
     }
 }

@@ -16,8 +16,5 @@ public class ShoppingCartItemConfiguration : IEntityTypeConfiguration<ShoppingCa
         builder.Property(i => i.ProductId).HasColumnName("product_id").IsRequired(); // FK
         builder.Property(i => i.Quantity).HasColumnName("quantity").IsRequired();
         builder.Property(i => i.Price).HasColumnName("price").IsRequired();
-    
-        builder.Property(i => i.CreatedDate).HasColumnName("created_date");
-        builder.Property(i => i.UpdatedDate).HasColumnName("updated_date");
     }
 }

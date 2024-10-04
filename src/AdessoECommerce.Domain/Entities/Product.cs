@@ -19,6 +19,6 @@ public class Product : BaseEntity
     public Brand Brand { get; set; }
     public ICollection<ProductAttribute> ProductAttributes { get; set; }
     public ICollection<ProductImage> ProductImages { get; set; }
-    public ICollection<ProductReviews> Reviews { get; set; }
+    public ICollection<ProductReviews> ProductReviews { get; set; }
     public ICollection<Discount> Discounts { get; set; }
 }
