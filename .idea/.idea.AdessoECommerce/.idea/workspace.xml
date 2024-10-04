@@ -9,20 +9,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0d9bf64-1552-49a9-b516-1b94d1aa539d" name="Changes" comment="add shared implementations">
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Address.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Attribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Brand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductImage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductReviews.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/DiscountType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/OrderStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/ProductStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/InfrastructureServiceRegistration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/AddressConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/AttributeConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/BrandConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/CategoryConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/CustomerConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/DiscountConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/OrderConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/OrderItemConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/PaymentConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ProductAttributeConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ProductConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ProductImageConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ProductReviewsConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ShoppingCartConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/EntityConfigurations/ShoppingCartItemConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/Persistence/Interceptors/EntitySaveChangesInterceptor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdessoECommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdessoECommerce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdessoECommerce.Domain/AdessoECommerce.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/AdessoECommerce.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Attribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Attribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/AdessoECommerce.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdessoECommerce.Infrastructure/AdessoECommerce.Infrastructure.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +41,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../AdessoBank/src/AdessoBank.Domain/Entities/Customer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/06c046bf69aa4f768c77e50706275b1b26a820/ec/acdd6c55/020002BB.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06c046bf69aa4f768c77e50706275b1b26a820/50/d44178e8/PropertyBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -108,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728048623652</updated>
-      <workItem from="1728048624985" duration="3336000" />
+      <workItem from="1728048624985" duration="6137000" />
     </task>
     <task id="LOCAL-00001" summary="add shared implementations">
       <option name="closed" value="true" />
