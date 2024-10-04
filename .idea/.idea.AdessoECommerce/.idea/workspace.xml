@@ -8,35 +8,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d9bf64-1552-49a9-b516-1b94d1aa539d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/AuthorizationProblemDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/BusinessProblemDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/InternalServerErrorProblemDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/Models/ProblemDetailModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/NotFoundProblemDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/ProblemDetails/ValidationProblemDetails.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/Types/AuthorizationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/Types/BusinessException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/Types/NotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Exceptions/Types/ValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/LogFormats/LogDetail.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/Serilog/Configurations/ElasticSearchConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/Serilog/Configurations/FileLogConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/Serilog/Logger/ElasticSearchLogger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/Serilog/Logger/FileLogger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/CrossCuttingConcerns/Logging/Serilog/LoggerServiceBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Domain/Entities/BaseEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Domain/Entities/IAuditable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Domain/Entities/ISoftDeletable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Pagination/BasePageableModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Pagination/IPaginate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Pagination/IQueryablePaginateExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Pagination/Paginate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Requests/PageRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Responses/PaginatedResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/Utils/Rules/BaseBusinessRule.cs" afterDir="false" />
+    <list default="true" id="b0d9bf64-1552-49a9-b516-1b94d1aa539d" name="Changes" comment="add shared implementations">
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Address.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Attribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Brand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Customer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Entities/ProductReviews.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/DiscountType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/OrderStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/Enums/ProductStatus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdessoECommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdessoECommerce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdessoECommerce.Shared/AdessoECommerce.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdessoECommerce.Shared/AdessoECommerce.Shared.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdessoECommerce.Domain/AdessoECommerce.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdessoECommerce.Domain/AdessoECommerce.Domain.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +32,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../AdessoBank/src/AdessoBank.Domain/Entities/Customer.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 0
@@ -118,16 +108,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728048623652</updated>
-      <workItem from="1728048624985" duration="1919000" />
+      <workItem from="1728048624985" duration="3336000" />
     </task>
+    <task id="LOCAL-00001" summary="add shared implementations">
+      <option name="closed" value="true" />
+      <created>1728050753803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050753803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="add shared implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shared implementations" />
   </component>
 </project>

@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AdessoECommerce.Shared\AdessoECommerce.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
